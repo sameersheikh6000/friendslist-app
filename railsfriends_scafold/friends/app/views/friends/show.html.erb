@@ -1,0 +1,12 @@
+<div class="container mt-5">
+<p id="notice"><%= notice %></p>
+<div class="jumbotron w-50 bg-light pb-3 p-3" style="border: 3px solid darkred; border-radius: 10%">
+  <h1 class="display-4"><%= @friend.first_name %> <%= @friend.last_name %></h1>
+  <p class="lead"><%= @friend.email %> | <%= @friend.phone %> | <%= @friend.social %> </p>
+  <strong><hr class="text-danger w-50"></strong>
+</div>
+
+
+<%= link_to 'Edit', edit_friend_path(@friend),class:"btn btn-secondary mt-3" %> |
+<%= link_to 'Back', friends_path, class:"btn btn-secondary mt-3" %>
+</div>
